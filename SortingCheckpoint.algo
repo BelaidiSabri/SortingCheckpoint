@@ -1,0 +1,36 @@
+
+/////////////////Algorithm///////////////
+
+ALGORITHM Insertion_Sorting
+VAR
+    Cards : ARRAY_OF INTEGER[10];
+    i,j,temp :INTEGER;
+BEGIN
+    FOR i FROM 1 TO Cards.length STEP 1  DO
+        j = i-1;
+        temp = Cards[i];
+        WHILE ( j>=0 && cards[j]>temp ) DO
+            cards[j+1]=Cards[j];
+            j = j-1;
+        END_WHILE
+        cards[j+1]= temp;
+    END_FOR
+END
+
+
+
+
+///////////////JavaScripts//////////
+
+/*var Cards = [3, 1, 7, 9, 1,5 ,8]; 
+  for (let i = 1; i < Cards.length; i++) {
+    let j = i - 1
+    let temp = Cards[i]
+    while (j >= 0 && Cards[j] > temp) {
+      Cards[j + 1] = Cards[j]
+      j--
+    }
+    Cards[j+1] = temp
+  }
+console.log(Cards)
+*/
